@@ -63,7 +63,7 @@
 
 <body class="bg-popBeige font-sans text-popBlack overflow-x-hidden">
 
-    <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+    <!--<nav class="flex justify-between items-center p-6 max-w-7xl mx-auto">
         <a href="index.html" class="block group">
             <div class="text-xl md:text-2xl font-title uppercase tracking-tighter transition group-hover:opacity-70">
                 CLUB WOLF
@@ -75,6 +75,36 @@
         </div>
         <button
             class="bg-popBlack text-white px-6 py-2 rounded-lg font-bold uppercase text-sm hover:scale-105 transition">Subscribe</button>
+    </nav>-->
+    <nav class="relative flex justify-between items-center p-6 max-w-7xl mx-auto z-50">
+        <a href="index.html" class="block group">
+            <div class="text-xl md:text-2xl font-title uppercase tracking-tighter transition group-hover:opacity-70">
+                CLUB WOLF
+            </div>
+        </a>
+
+        <div class="hidden md:flex space-x-8 font-medium">
+            <a href="index.html" class="hover:underline">Episodes</a>
+            <a href="blog.html" class="hover:underline">Blog</a>
+        </div>
+
+        <button
+            class="hidden md:block bg-popBlack text-white px-6 py-2 rounded-lg font-bold uppercase text-sm hover:scale-105 transition">
+            Subscribe
+        </button>
+
+        <button id="menu-btn" class="md:hidden flex flex-col space-y-1.5 focus:outline-none z-50">
+            <span class="w-8 h-1 bg-popBlack transition-all duration-300"></span>
+            <span class="w-8 h-1 bg-popBlack transition-all duration-300"></span>
+            <span class="w-8 h-1 bg-popBlack transition-all duration-300"></span>
+        </button>
+
+        <div id="mobile-menu"
+            class="fixed inset-0 bg-popLavender flex flex-col items-center justify-center space-y-8 text-3xl font-title uppercase tracking-widest translate-x-full transition-transform duration-300 md:hidden z-40">
+            <a href="index.html" class="hover:line-through">Episodes</a>
+            <a href="blog.html" class="hover:line-through">Blog</a>
+            <button class="bg-popBlack text-white px-8 py-4 text-xl rounded-xl neo-brutalism-border">Subscribe</button>
+        </div>
     </nav>
 
     <section class="relative max-w-7xl mx-auto px-20 py-12 grid md:grid-cols-2 gap-8 items-center">
@@ -154,8 +184,8 @@
             <div>
                 <h5 class="font-bold mb-4 uppercase">Menu</h5>
                 <ul class="space-y-2 text-sm">
-                    <li><a href="#" class="hover:underline">Episodes</a></li>
-                    <li><a href="#" class="hover:underline">Blog</a></li>
+                    <li><a href="index.html" class="hover:underline">Episodes</a></li>
+                    <li><a href="blog.html" class="hover:underline">Blog</a></li>
                 </ul>
             </div>
             <div>
